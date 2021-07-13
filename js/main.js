@@ -16,15 +16,24 @@ Dichiariamo chi ha vinto. */
 var evenOdd = prompt('Pari o Dispari?', 'Pari');
 console.log(evenOdd);
 
+// todo validation
+
 var userNumber = parseInt(prompt('Scegli un numero da 1 a 5', '3'));
 console.log(userNumber);
 
+// todo validation
+
 // generazione casuale numero pc
 
-function randomNumber() {
+function randomNumber(min, max) {
 
+    // generazione numero randomico
+    return Math.floor(Math.random() * (5 - 1)) + 1;
 
 }
+
+var cpuNumber = randomNumber(1, 5);
+console.log(cpuNumber);
 
 
 
