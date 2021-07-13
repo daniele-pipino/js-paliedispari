@@ -23,17 +23,45 @@ console.log(userNumber);
 
 // todo validation
 
-// generazione casuale numero pc
-
+// * Funzione per la generazione casuale numero pc
 function randomNumber(min, max) {
 
-    // generazione numero randomico
+    //* Generazione numero randomico
     return Math.floor(Math.random() * (5 - 1)) + 1;
 
 }
-
+//*Invocazione funzione randomNumber
 var cpuNumber = randomNumber(1, 5);
 console.log(cpuNumber);
+
+//* Somma dei  due numeri
+let somma = 0;
+somma = cpuNumber + userNumber;
+console.log(somma);
+
+//* Funzione per determinare se pari se dispari
+function isEven(num) {
+    if (somma % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//* Invocazione funzione isEven
+var result = isEven(somma);
+
+//* Criterio dichiarazione del vincitore
+
+if (result == true && evenOdd.trim().toLowerCase() === 'pari') {
+    console.log("L'utente vince");
+} else if (result == false && evenOdd.trim().toLowerCase() === 'dispari') {
+    console.log("L'utente vince");
+} else {
+    console.log('Cpu vince');
+}
+
+
 
 
 
