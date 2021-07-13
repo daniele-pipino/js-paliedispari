@@ -14,14 +14,23 @@ Dichiariamo chi ha vinto. */
 // recupero scelte utente
 
 var evenOdd = prompt('Pari o Dispari?', 'Pari');
+
+//? Validation evenOdd
+while (evenOdd.trim().toLowerCase() !== 'pari' && evenOdd.trim().toLowerCase() !== 'dispari') {
+    evenOdd = prompt('Pari o Dispari?', 'Pari');
+}
+//?  Risultato
 console.log(evenOdd);
 
-// todo validation
-
+//* numero scelto dall'utente
 var userNumber = parseInt(prompt('Scegli un numero da 1 a 5', '3'));
-console.log(userNumber);
 
-// todo validation
+//? Validation userNumber
+while (isNaN(userNumber) || userNumber <= 0 || userNumber > 5) {
+    userNumber = parseInt(prompt('Scegli un numero da 1 a 5', '3'));
+}
+//? Risultato
+console.log(userNumber);
 
 // * Funzione per la generazione casuale numero pc
 function randomNumber(min, max) {
