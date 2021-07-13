@@ -37,8 +37,8 @@ function randomNumber(min, max) {
 
     //* Generazione numero randomico
     return Math.floor(Math.random() * (5 - 1)) + 1;
-
 }
+
 //*Invocazione funzione randomNumber
 var cpuNumber = randomNumber(1, 5);
 console.log(cpuNumber);
@@ -69,11 +69,3 @@ if (result == true && evenOdd.trim().toLowerCase() === 'pari') {
 } else {
     console.log('Cpu vince');
 }
-
-
-
-
-
-
-
-
